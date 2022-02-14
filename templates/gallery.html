@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-US">
+
+
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+					<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
+				<title>gallery</title>
+<meta name='robots' content='max-image-preview:large' >
+<head>
+
+<link rel='stylesheet' id='swiper-css'  href="{% static 'wp-content/plugins/lte-ext/assets/css/swiper5243.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href="{% static 'wp-includes/css/dist/block-library/style.minc8d8.css' %}" type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+#start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote_citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search_label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}
+</style>
+<link rel='stylesheet' id='wc-blocks-vendors-style-css'  href="{% static 'wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style42c6.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='wc-blocks-style-css'  href="{% static 'wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style42c6.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-selectBox-css'  href="{% static 'wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox7359.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcwl-font-awesome-css'  href="{% static 'wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome1849.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce_prettyPhoto_css-css'  href="{% static 'wp-content/plugins/woocommerce/assets/css/prettyPhoto005e.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcwl-main-css'  href="{% static 'wp-content/plugins/yith-woocommerce-wishlist/assets/css/style9b70.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href="{% static 'wp-content/plugins/contact-form-7/includes/css/styles5697.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='lt-custom-css'  href="{% static 'wp-content/plugins/lt-custom/css/lt-custom5152.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='lt-colorpicker-css'  href="{% static 'wp-content/plugins/lt-custom/css/colorpicker5152.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='lt-colorpicker-font-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%7CPlayfair+Display%3A700&amp;ver=1.0#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='lt-colorpicker-font-2-css'  href='http://fonts.googleapis.com/css?family=Lato%3A300%7CUbuntu%3A700&amp;ver=1.0#038;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href="{% static 'wp-includes/css/dashicons.minc8d8.css?ver=5.8.3' %}" type='text/css' media='all' />
+<style id='dashicons-inline-css' type='text/css'>
+[data-font="Dashicons"]:before {font-family: 'Dashicons' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+</style>
+<link rel='stylesheet' id='post-views-counter-frontend-css'  href="{% static 'wp-content/plugins/post-views-counter/css/frontend264f.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href="{% static 'wp-content/plugins/woocommerce/assets/css/woocommerce-layoutad76.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href="{% static 'wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreenad76.css' %}" type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href="{% static 'wp-content/plugins/woocommerce/assets/css/woocommercead76.css' %}" type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='give-styles-css'  href="{% static 'wp-content/plugins/give/assets/dist/css/give7008.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='give-donation-summary-style-frontend-css'  href="{% static 'wp-content/plugins/give/assets/dist/css/give-donation-summary7008.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href="{% static 'wp-content/themes/fidem/assets/css/bootstrap-grid5152.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='fidem-theme-style-css'  href="{% static 'wp-content/themes/fidem/style20b9.css' %}" type='text/css' media='all' />
+<!--<style id='fidem-theme-style-inline-css' type='text/css'>
+			:root {			  &#45;&#45;main:   #832732 !important;			  &#45;&#45;second:   #e1dbcb !important;			  &#45;&#45;gray:   #f5f3f1 !important;			  &#45;&#45;black:  #221917 !important;			  &#45;&#45;white:  #FFFFFF !important;			  &#45;&#45;red:   #832732 !important;			  &#45;&#45;yellow:   #e1dbcb !important;			  &#45;&#45;green:   #42bf80 !important;&#45;&#45;font-main: 'Jost' !important;&#45;&#45;font-headers: 'Cormorant Infant' !important;			  			}				.lte-page-header { background-image: url(wp-content/uploads/2021/12/inner_HEADER.jpg) !important; } .lte-footer-wrapper:before { background-image: url(//fidem.like-themes.com/wp-content/uploads/2021/11/footer-bg-025.png) !important; } #nav-wrapper.lte-layout-transparent .lte-navbar.dark.affix { background-color: rgba(0,0,0,0.75) !important; } .lte-logo img { max-height: 74px !important; } .lte-layout-desktop-center-transparent .lte-navbar .lte-logo img { max-height: 82px !important; }
+</style>-->
+
+<link rel='stylesheet' id='font-awesome-css'  href="{% static 'wp-content/themes/fidem/assets/fonts/font-awesome/css/all.min20b9.css' %}" type='text/css' media='all' />
+<style id='font-awesome-inline-css' type='text/css'>
+[data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+</style>
+<link rel='stylesheet' id='elementor-icons-css'  href="{% static 'wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min05c8.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-legacy-css'  href="{% static 'wp-content/uploads/elementor/css/custom-frontend-legacy.minb045.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css'  href="{% static 'wp-content/uploads/elementor/css/custom-frontend.minb6c4.css' %}" type='text/css' media='all' />
+<style id='elementor-frontend-inline-css' type='text/css'>
+@font-face{font-family:eicons;src:url("{% static 'wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons0b93.eot' %}");src:url(http://fidem.like-themes.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(http://fidem.like-themes.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(http://fidem.like-themes.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(http://fidem.like-themes.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(http://fidem.like-themes.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel='stylesheet' id='elementor-post-13200-css'  href="{% static 'wp-content/uploads/elementor/css/post-13200b6c4.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-13198-css'  href="{% static 'wp-content/uploads/elementor/css/post-131983281.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-popup-css'  href="{% static 'wp-content/themes/fidem/assets/css/magnific-popupf488.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='fidem-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Jost:400,300,400i,700,700i%7CCormorant+Infant:400,italic&amp;subset=latin' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-shims-css'  href="{% static 'wp-content/themes/fidem/assets/fonts/font-awesome/css/v4-shims.min20b9.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='lte-font-css'  href="{% static 'wp-content/themes/fidem/assets/fonts/lte-font-codes20b9.css' %}" type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=auto&amp;ver=5.8.3' type='text/css' media='all' />
+
+	<script type='text/javascript' src="{% static 'wp-includes/js/jquery/jquery.minaf6c.js' %}" id='jquery-core-js'></script>
+<script type='text/javascript' src="{% static 'wp-includes/js/jquery/jquery-migrate.mind617.js' %}" id='jquery-migrate-js'></script>
+<script type='text/javascript' src="{% static 'wp-content/plugins/give/assets/dist/js/give7008.js' %}" id='give-js'></script>
+<script type='text/javascript' src="{% static 'wp-content/plugins/lte-ext/assets/js/jquery.paroller6dbf.js' %}" id='jquery-paroller-js'></script>
+<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/modernizr-2.6.2.min61da.js' %}" id='modernizr-js'></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+<style>
+.fa-plus-circle
+{
+display:none;
+}
+.elementor-element-a276837
+{
+ padding: 25px!important;
+    box-shadow: 1px 1px 8px #00000042!important;
+    background-color:white!important;
+}
+
+ .elementor-motion-effects-layer
+ {
+
+ background-position:center center;
+ background-size:cover;
+ }
+
+
+
+   #gallery {
+  padding-top: 40px;
+}
+@media screen and (min-width: 991px) {
+  #gallery {
+    padding: 60px 30px 0 30px;
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+.img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.img-overlay i {
+  color: #fff;
+  font-size: 3em;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#overlay img {
+  margin: 0;
+  width: 80%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  #overlay img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    width: 50%;
+  }
+}
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#nextButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #nextButton {
+    font-size: 3em;
+  }
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#prevButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #prevButton {
+    font-size: 3em;
+  }
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#exitButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #exitButton {
+    font-size: 3em;
+  }
+}
+
+</style>
+</head>
+<body class="home page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-13198 theme-fidem woocommerce-no-js give-test-mode give-page tribe-no-js full-width lte-color-scheme-default lte-body-white lte-background-white paceloader-disabled no-sidebar elementor-default elementor-kit-13200 elementor-page elementor-page-13198">
+{% include "header.html" %}
+
+
+
+{% for i in cat %}
+
+<form action="gallerysingle" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+
+
+	<button value="{{i.id}}" name="id" type="submit" class="signupbtn"><img src="{{pic.i.image.url}}">{{i.function_name}}</button>
+
+{% endfor %}
+
+<!--<section id="gallery" style="padding:50px 0px;">
+  <div class="container">
+	  <div class="">
+<h3 style="text-align: center;">Gallery</h3>
+</div>
+    <div id="image-gallery">
+      <div class="row">
+        {% for i in pic %}
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="{{i.image.url}}"><img src="{{i.image.url}}" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>-->
+
+
+
+
+
+
+
+
+
+
+{% include "footer.html" %}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VTFP0QDD4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-9VTFP0QDD4');
+	</script>
+
+
+	<div class="lt-custom-popup" data-image="{% static 'wp-content/plugins/lt-custom/images/icon.png' %}">
+	</div>
+	<script>
+		(function (body) {
+			'use strict';
+			body.className = body.className.replace(/\btribe-no-js\b/, 'tribe-js');
+		})(document.body);
+	</script>
+	<script>(function () {
+			function maybePrefixUrlField() {
+				if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+					this.value = "http://" + this.value;
+				}
+			}
+
+			var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+			if (urlFields) {
+				for (var j = 0; j < urlFields.length; j++) {
+					urlFields[j].addEventListener('blur', maybePrefixUrlField);
+				}
+			}
+		})();</script><a href="#" class="lte-go-top floating lte-go-top-icon"><span
+			class="go-top-icon-v2 icon icon-cross"></span><span class="go-top-header">go top</span></a>
+	<script> /* <![CDATA[ */var tribe_l10n_datatables = { "aria": { "sort_ascending": ": activate to sort column ascending", "sort_descending": ": activate to sort column descending" }, "length_menu": "Show _MENU_ entries", "empty_table": "No data available in table", "info": "Showing _START_ to _END_ of _TOTAL_ entries", "info_empty": "Showing 0 to 0 of 0 entries", "info_filtered": "(filtered from _MAX_ total entries)", "zero_records": "No matching records found", "search": "Search:", "all_selected_text": "All items on this page were selected. ", "select_all_link": "Select all pages", "clear_selection": "Clear Selection.", "pagination": { "all": "All", "next": "Next", "previous": "Previous" }, "select": { "rows": { "0": "", "_": ": Selected %d rows", "1": ": Selected 1 row" } }, "datepicker": { "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"], "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesShort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "monthNamesMin": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "nextText": "Next", "prevText": "Prev", "currentText": "Today", "closeText": "Done", "today": "Today", "clear": "Clear" } };/* ]]> */ </script>
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='elementor-post-29109-css'
+		href="{% static 'wp-content/uploads/elementor/css/post-29109808f.css?ver=1639671951' %}" type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-post-29108-css'
+		href="{% static 'wp-content/uploads/elementor/css/post-29108808f.css?ver=1639671951' %}" type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-post-28087-css'
+		href="{% static 'wp-content/uploads/elementor/css/post-28087808f.css?ver=1639671951' %}" type='text/css' media='all' />
+	<link rel='stylesheet' id='lte-zoomslider-css'
+		href="{% static 'wp-content/plugins/lte-ext/elementor/shortcodes/zoomslider/zoom-sliderc8d8.css' %}" type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='elementor-post-29393-css'
+		href="{% static 'wp-content/uploads/elementor/css/post-29393808f.css?ver=1639671951' %}" type='text/css' media='all' />
+	<link rel='stylesheet' id='e-animations-css'
+		href="{% static 'wp-content/plugins/elementor/assets/lib/animations/animations.minb045.css' %}" type='text/css'
+		media='all' />
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min7359.js' %}"
+		id='jquery-selectBox-js'></script>
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min005e.js' %}"
+		id='prettyPhoto-js'></script>
+
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min9b70.js' %}"
+		id='jquery-yith-wcwl-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js' %}"
+		id='regenerator-runtime-js'></script>
+	<script type="{% static 'text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js' %}"
+		id='wp-polyfill-js'></script>
+
+	<script type='text/javascript' src="{% static 'wp-content/plugins/contact-form-7/includes/js/index5697.js' %}"
+		id='contact-form-7-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/lt-custom/js/colorpicker5152.js' %}"
+		id='lt-colorpicker-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/lt-custom/js/lt-custom5152.js' %}"
+		id='lt-custom-js'></script>
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min272a.js' %}"
+		id='jquery-blockui-js'></script>
+
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minad76.js' %}"
+		id='wc-add-to-cart-js'></script>
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min00bc.js' %}"
+		id='js-cookie-js'></script>
+
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minad76.js' %}"
+		id='woocommerce-js'></script>
+
+
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.minad76.js' %}"
+		id='wc-cart-fragments-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/dist/hooks.mine16b.js' %}"
+		id='wp-hooks-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/dist/i18n.min71a7.js' %}"
+		id='wp-i18n-js'></script>
+	<script type='text/javascript' id='wp-i18n-js-after'>
+		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+	</script>
+
+	<script type='text/javascript' src="{% static 'wp-content/plugins/give/assets/dist/js/give-donation-summary7008.js' %}"
+		id='give-donation-summary-script-frontend-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/lte-ext/assets/js/swiper.min5243.js' %}"
+		id='swiper-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/lte-ext/assets/js/frontend2fca.js' %}"
+		id='lte-frontend-js'></script>
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/lte-ext/elementor/shortcodes/partners/partners2fca.js' %}"
+		id='lte-partners-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/imagesloaded.mineda1.js' %}" id='imagesloaded-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/masonry.min3a05.js' %}" id='masonry-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/jquery/jquery.masonry.minef70.js' %}"
+		id='jquery-masonry-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/jquery.matchHeightc8d8.js' %}"
+		id='matchheight-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/jquery.nicescroll9b73.js' %}"
+		id='nicescroll-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/bootstrap.mina352.js' %}"
+		id='bootstrap-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/scrollreveal7984.js' %}"
+		id='scrollreveal-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/waypoint1f22.js' %}"
+		id='waypoint-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/parallax.minc358.js' %}"
+		id='parallax-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/jquery.paroller.minb12b.js' %}"
+		id='paroller-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/parallax-js324d.js' %}"
+		id='parallax-js-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/scripts20b9.js' %}"
+		id='fidem-scripts-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/themes/fidem/assets/js/jquery.magnific-popupf488.js' %}"
+		id='magnific-popup-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/wp-embed.minc8d8.js' %}" id='wp-embed-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/lte-ext/elementor/shortcodes/zoomslider/jquery.zoomslider.js' %}"
+		id='lte-zoomslider-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/lte-ext/elementor/shortcodes/effects/anime.min.js' %}"
+		id='anime-js'></script>
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/lte-ext/elementor/shortcodes/effects/jquery.slide_background.js' %}"
+		id='slide-background-js'></script>
+	<script type='text/javascript' defer src="{% static 'wp-content/plugins/mailchimp-for-wp/assets/js/forms81db.js' %}"
+		id='mc4wp-forms-api-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/webpack.runtime.minb045.js' %}"
+		id='elementor-webpack-runtime-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/frontend-modules.minb045.js' %}"
+		id='elementor-frontend-modules-js'></script>
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js' %}"
+		id='elementor-waypoints-js'></script>
+	<script type='text/javascript' src="{% static 'wp-includes/js/jquery/ui/core.min35d0.js' %}"
+		id='jquery-ui-core-js'></script>
+	<script type='text/javascript'
+		src="{% static 'wp-content/plugins/elementor/assets/lib/share-link/share-link.minb045.js' %}"
+		id='share-link-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/lib/dialog/dialog.mina288.js' %}"
+		id='elementor-dialog-js'></script>
+	<script type='text/javascript' id='elementor-frontend-js-before'>
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1200, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 991, "default_value": 880, "direction": "max", "is_enabled": true }, "tablet": { "label": "Tablet", "value": 1199, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1366, "default_value": 1200, "direction": "max", "is_enabled": true }, "laptop": { "label": "Laptop", "value": 1599, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 1900, "default_value": 2400, "direction": "min", "is_enabled": true } } }, "version": "3.4.8", "is_static": false, "experimentalFeatures": { "e_import_export": true, "additional_custom_breakpoints": true, "landing-pages": true, "elements-color-picker": true, "admin-top-bar": true }, "urls": { "assets": "http:\/\/fidem.like-themes.com\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "viewport_tablet": 1199, "viewport_mobile": 767, "active_breakpoints": ["viewport_mobile", "viewport_mobile_extra", "viewport_tablet", "viewport_tablet_extra", "viewport_laptop", "viewport_widescreen"], "viewport_mobile_extra": 991, "viewport_laptop": 1599, "viewport_widescreen": 1900, "viewport_tablet_extra": 1366, "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 13198, "title": "Fidem%20%E2%80%93%20Just%20another%20WordPress%20site", "excerpt": "", "featuredImage": false } };
+	</script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/frontend.minb045.js' %}"
+		id='elementor-frontend-js'></script>
+	<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/preloaded-modules.minb045.js' %}"
+		id='preloaded-modules-js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+	<script>
+		$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+});
+	</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>
+    // Gallery image hover
+$( ".img-wrapper" ).hover(
+  function() {
+    $(this).find(".img-overlay").animate({opacity: 1}, 600);
+  }, function() {
+    $(this).find(".img-overlay").animate({opacity: 0}, 600);
+  }
+);
+
+// Lightbox
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+// Add overlay
+$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+$("#gallery").append($overlay);
+
+// Hide overlay on default
+$overlay.hide();
+
+// When an image is clicked
+$(".img-overlay").click(function(event) {
+  // Prevents default behavior
+  event.preventDefault();
+  // Adds href attribute to variable
+  var imageLocation = $(this).prev().attr("href");
+  // Add the image src to $image
+  $image.attr("src", imageLocation);
+  // Fade in the overlay
+  $overlay.fadeIn("slow");
+});
+
+// When the overlay is clicked
+$overlay.click(function() {
+  // Fade out the overlay
+  $(this).fadeOut("slow");
+});
+
+// When next button is clicked
+$nextButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").next().find("img"));
+  // All of the images in the gallery
+  var $images = $("#image-gallery img");
+  // If there is a next image
+  if ($nextImg.length > 0) {
+    // Fade in the next image
+    $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  } else {
+    // Otherwise fade in the first image
+    $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+  }
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When previous button is clicked
+$prevButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+  // Fade in the next image
+  $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When the exit button is clicked
+$exitButton.click(function() {
+  // Fade out the overlay
+  $("#overlay").fadeOut("slow");
+});
+</script>
+
+
+
+</body>
+
+<!-- Mirrored from fidem.like-themes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Feb 2022 06:05:24 GMT -->
+
+</html>
+
+<!-- Dynamic page generated in 1.415 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2022-02-03 05:44:58 -->
+
+<!-- Compression = gzip -->
