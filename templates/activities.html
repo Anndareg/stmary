@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 					<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
-				<title>activities</title>
+				<title>gallery</title>
 <meta name='robots' content='max-image-preview:large' >
 <head>
 
@@ -45,6 +45,7 @@
 <!--<style id='fidem-theme-style-inline-css' type='text/css'>
 			:root {			  &#45;&#45;main:   #832732 !important;			  &#45;&#45;second:   #e1dbcb !important;			  &#45;&#45;gray:   #f5f3f1 !important;			  &#45;&#45;black:  #221917 !important;			  &#45;&#45;white:  #FFFFFF !important;			  &#45;&#45;red:   #832732 !important;			  &#45;&#45;yellow:   #e1dbcb !important;			  &#45;&#45;green:   #42bf80 !important;&#45;&#45;font-main: 'Jost' !important;&#45;&#45;font-headers: 'Cormorant Infant' !important;			  			}				.lte-page-header { background-image: url(wp-content/uploads/2021/12/inner_HEADER.jpg) !important; } .lte-footer-wrapper:before { background-image: url(//fidem.like-themes.com/wp-content/uploads/2021/11/footer-bg-025.png) !important; } #nav-wrapper.lte-layout-transparent .lte-navbar.dark.affix { background-color: rgba(0,0,0,0.75) !important; } .lte-logo img { max-height: 74px !important; } .lte-layout-desktop-center-transparent .lte-navbar .lte-logo img { max-height: 82px !important; }
 </style>-->
+
 <link rel='stylesheet' id='font-awesome-css'  href="{% static 'wp-content/themes/fidem/assets/fonts/font-awesome/css/all.min20b9.css' %}" type='text/css' media='all' />
 <style id='font-awesome-inline-css' type='text/css'>
 [data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
@@ -77,6 +78,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
 <style>
+.fa-plus-circle
+{
+display:none;
+}
 .elementor-element-a276837
 {
  padding: 25px!important;
@@ -93,419 +98,191 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slick-slide {
-    margin: 0px 20px;
+   #gallery {
+  padding-top: 40px;
+}
+@media screen and (min-width: 991px) {
+  #gallery {
+    padding: 60px 30px 0 30px;
+  }
 }
 
-.slick-slide img {
-    width: 100%;
-    object-fit:cover;
-    height:280px;
-
-}
-
-.slick-slider
-{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-<!--gallerynslider end here-->
-
-.elementor-13198 .elementor-element.elementor-element-f93f708:not(.elementor-motion-effects-element-type-background) > .elementor-column-wrap, .elementor-13198 .elementor-element.elementor-element-f93f708 > .elementor-column-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-image: url("{% static 'image/logo.png' %}");
-    background-size: cover;
-}
-
-
-	.calendar {
-  min-width: 350px;
-  max-width: 50%;
-  margin: 1em auto;
-  padding: 1em;
-  background: #EEE;
-  font-family: arial, helvetica, san-serif;
-  box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
-  border-radius: 0.2em;
-}
-.calendar:last-child {
-  border-top: 6px solid red;
-}
-.calendar h1 {
-  margin: 0 0 0.4em;
-  font-weight: bold;
-}
-.calendar .event {
-  color: #333;
-  display: block;
-  padding: 0.1em;
-  transition: all 0.25s ease;
-  margin-bottom: 0.5em;
-}
-.calendar .event:hover {
-  background: #d5d5d5;
-  text-decoration: none;
-  color: black;
-}
-.calendar .event_icon {
-  width: 3em;
-  float: left;
-  margin-right: 0.75em;
-}
-.calendar .event_month, .calendar .event_day {
-  text-align: center;
-}
-.calendar .event_month {
-  padding: 0.1em;
-  margin-bottom: 0.15em;
-  background: #C00000;
-  font-size: 0.75em;
-  color: white;
-  border-top-left-radius: 0.3em;
-  border-top-right-radius: 0.3em;
-}
-.calendar .event_day {
-  border: 1px solid #999;
-  background: white;
-  color: black;
-  font-size: 1.25em;
-  font-weight: bold;
-  border-bottom-left-radius: 0.1em;
-  border-bottom-right-radius: 0.1em;
-}
-.calendar .event_title {
-  font-size: 1.1em;
-  height: 3em;
-  display: table-cell;
-  vertical-align: middle;
-}
-.calendar .btn {
-  margin-top: 0.5em;
-  width: 100%;
-  font-size: 1.5em;
-}
-
-
-
-.box {
-  background: #333;
-  width: 100%!important;
-  height: 250px;
+.img-wrapper {
   position: relative;
-  overflow:hidden;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
-  margin-bottom:27px;
+  margin-top: 15px;
+}
+.img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
 }
 
-.title {
-  background:#333;
-  color: white;
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -50px;
-  margin-bottom: -30px;
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
-  -webkit-transition: all .3s linear;
-  -moz-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
 }
-
-.box:hover {
-  opacity: .5;
+.img-overlay i {
+  color: #fff;
+  font-size: 3em;
 }
-
-.box:hover .title {
-  opacity: 1;
-  margin-bottom: 110px;
-}
-
-.card {
-  cursor: pointer;
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  background: #fff;
-  box-shadow: 1px 1px 10px -8px #333;
-  padding: 10px;
-  display: inline-block;
-  margin: 10px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#overlay img {
+  margin: 0;
+  width: 80%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  #overlay img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    width: 50%;
+  }
+}
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#nextButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #nextButton {
+    font-size: 3em;
+  }
+}
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#prevButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #prevButton {
+    font-size: 3em;
+  }
+}
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#exitButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #exitButton {
+    font-size: 3em;
+  }
 }
 
-.image {
-
+.gallery-title{
+	font-size: 30px!important;
+    background-color: gray!important;
+    padding: 5px 10px 5px 10px!important;
+    border-radius: 5px!important;
+    font-weight: 600!important;
+    margin-top: 110px!important;
 }
-
-.image img {
-  width: 100%;
+.filter_gallery
+{
+    height: 290px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-
-.caption {
-  margin-top: 10px;
-  text-align: right;
-  color: #888;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 </style>
 </head>
 <body class="home page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-13198 theme-fidem woocommerce-no-js give-test-mode give-page tribe-no-js full-width lte-color-scheme-default lte-body-white lte-background-white paceloader-disabled no-sidebar elementor-default elementor-kit-13200 elementor-page elementor-page-13198">
 {% include "header.html" %}
 
 
-{% for i in act_category %}
-<form action="activitysingle" method="post" enctype="multipart/form-data">
-	{% csrf_token %}
-
-	<button value="{{i.id}}" name="id" type="submit" class="signupbtn">{{i.category}}</button>
-
-{% endfor %}
 
 
 
 
 
-<!--
-<section style="padding:50px 0px;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div>
-					<div class="card" data-album-card>
-					<div class="image" >
-					  <img src="https://picsum.photos/600/400"/>
-					</div>
-					<div class="caption" >
-					  This is a plant
-					</div>
-				  </div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div>
-					<div class="card" data-album-card>
-					<div class="image" >
-					  <img src="https://picsum.photos/600/400"/>
-					</div>
-					<div class="caption" >
-					  This is a plant
-					</div>
-				  </div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div>
-					<div class="card" data-album-card>
-					<div class="image" >
-					  <img src="https://picsum.photos/600/400"/>
-					</div>
-					<div class="caption" >
-					  This is a plant
-					</div>
-				  </div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div>
-					<div class="box">
-						<img src="http://placehold.it/350x250/" />
-						  <span class="title">
-							title
-						  </span>
-					</div>
-				</div>
-			</div>
+<div class="container" style="padding:50px 0px;">
+	<div class="text-center" style="text-align: center;">
+		<div class="">
+			<h3>Activities</h3>
 		</div>
 	</div>
-</section>
+	<div class="row">
+{% for i in act_category %}
+	<div class="col-md-4">
+		<form action="activitysingle" method="post" enctype="multipart/form-data" style="padding:10px;">
 
--->
+			{% csrf_token %}
 
-
-
-<!--
-<div class="lte-header">
-					<h3>SCHOOLS</h3>
-					<div class="row" style="text-align:center;">
-
-							{% for i in school %}
-								<div class="col-md-4">
-									<img style=" width: 100%;object-fit:cover; height:280px;" src="{{i.school_image.url}}">
-									<h6>{{i.school_name}},{{i.school_place}}</h6>
-								</div>
-							{% endfor %}
-
+			<div>
+				<button value="{{i.id}}" name="id" type="submit" class="filter_gallery" style="background-image: url(https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Mahadev-Bhagwan-Photo-for-Devotee.jpg);">
+					<div class="gallery-title">
+						{{i.category}}
 					</div>
-
-					<h3>HOSPITALS</h3>
-					<div class="row" style="text-align:center;">
-
-							{% for i in hospital %}
-								<div class="col-md-4">
-									<img style=" width: 100%;object-fit:cover; height:280px;" src="{{i.hospital_image.url}}">
-									<h6>{{i.hospital_name}},{{i.hospital_place}}</h6>
-								</div>
-							{% endfor %}
-
-					</div>
-
-					<h3>HOSTELS</h3>
-					<div class="row" style="text-align:center;">
-
-							{% for i in hostel %}
-								<div class="col-md-4">
-									<img src="{{i.hostel_image.url}}">
-									<h6>{{i.hostel_name}},{{i.hostel_place}}</h6>
-								</div>
-							{% endfor %}
-
-					</div>
-
-					<h3>SCHOOLS</h3>
-					<div class="row" style="text-align:center;">
-
-							{% for i in school %}
-								<div class="col-md-4">
-									<img src="{{i.school_image.url}}">
-									<h6>{{i.school_name}},{{i.school_place}}</h6>
-								</div>
-							{% endfor %}
-
-					</div>
-
+				</button>
+			</div>
+		</form>
+	</div>
+{% endfor %}
 </div>
+</div>
+<!--<section id="gallery" style="padding:50px 0px;">
+  <div class="container">
+	  <div class="">
+<h3 style="text-align: center;">Gallery</h3>
+</div>
+    <div id="image-gallery">
+      <div class="row">
+        {% for i in pic %}
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+          <div class="img-wrapper">
+            <a href="{{i.image.url}}"><img src="{{i.image.url}}" class="img-responsive"></a>
+            <div class="img-overlay">
+              <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>-->
 
 
 
@@ -516,7 +293,6 @@
 
 
 
--->
 {% include "footer.html" %}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VTFP0QDD4"></script>
 	<script>
@@ -711,7 +487,94 @@
 });
 	</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>
+    // Gallery image hover
+$( ".img-wrapper" ).hover(
+  function() {
+    $(this).find(".img-overlay").animate({opacity: 1}, 600);
+  }, function() {
+    $(this).find(".img-overlay").animate({opacity: 0}, 600);
+  }
+);
 
+// Lightbox
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
+var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
+var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+// Add overlay
+$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
+$("#gallery").append($overlay);
+
+// Hide overlay on default
+$overlay.hide();
+
+// When an image is clicked
+$(".img-overlay").click(function(event) {
+  // Prevents default behavior
+  event.preventDefault();
+  // Adds href attribute to variable
+  var imageLocation = $(this).prev().attr("href");
+  // Add the image src to $image
+  $image.attr("src", imageLocation);
+  // Fade in the overlay
+  $overlay.fadeIn("slow");
+});
+
+// When the overlay is clicked
+$overlay.click(function() {
+  // Fade out the overlay
+  $(this).fadeOut("slow");
+});
+
+// When next button is clicked
+$nextButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").next().find("img"));
+  // All of the images in the gallery
+  var $images = $("#image-gallery img");
+  // If there is a next image
+  if ($nextImg.length > 0) {
+    // Fade in the next image
+    $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  } else {
+    // Otherwise fade in the first image
+    $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+  }
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When previous button is clicked
+$prevButton.click(function(event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+  // Fade in the next image
+  $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When the exit button is clicked
+$exitButton.click(function() {
+  // Fade out the overlay
+  $("#overlay").fadeOut("slow");
+});
+</script>
 
 
 

@@ -133,7 +133,6 @@ display:none;
   color: #fff;
   font-size: 3em;
 }
-
 #overlay {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -168,7 +167,6 @@ display:none;
     width: 50%;
   }
 }
-
 #nextButton {
   color: #fff;
   font-size: 2em;
@@ -182,7 +180,6 @@ display:none;
     font-size: 3em;
   }
 }
-
 #prevButton {
   color: #fff;
   font-size: 2em;
@@ -196,7 +193,6 @@ display:none;
     font-size: 3em;
   }
 }
-
 #exitButton {
   color: #fff;
   font-size: 2em;
@@ -214,23 +210,55 @@ display:none;
   }
 }
 
+.gallery-title{
+	font-size: 30px!important;
+    background-color: gray!important;
+    padding: 5px 10px 5px 10px!important;
+    border-radius: 5px!important;
+    font-weight: 600!important;
+    margin-top: 110px!important;
+}
+.filter_gallery
+{
+    height: 290px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 </style>
 </head>
 <body class="home page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-13198 theme-fidem woocommerce-no-js give-test-mode give-page tribe-no-js full-width lte-color-scheme-default lte-body-white lte-background-white paceloader-disabled no-sidebar elementor-default elementor-kit-13200 elementor-page elementor-page-13198">
 {% include "header.html" %}
 
 
-
+<div class="container" style="padding:50px 0px;">
+	<div class="text-center" style="text-align: center;">
+		<div class="">
+			<h3>Gallery</h3>
+		</div>
+	</div>
+	<div class="row">
+	{% for j in pic %}
 {% for i in cat %}
+	<div class="col-md-4">
+		<form action="gallerysingle" method="post" enctype="multipart/form-data" style="padding:10px;">
 
-<form action="gallerysingle" method="post" enctype="multipart/form-data">
-	{% csrf_token %}
+			{% csrf_token %}
 
-
-	<button value="{{i.id}}" name="id" type="submit" class="signupbtn"><img src="{{pic.i.image.url}}">{{i.function_name}}</button>
-
+			<div>
+				<button value="{{i.id}}" name="id" type="submit" class="filter_gallery" style="background-image: url({{j.image.url}})">
+					<div class="gallery-title">
+						{{i.function_name}}
+					</div>
+				</button>
+			</div>
+		</form>
+	</div>
+		{% endfor %}
 {% endfor %}
-
+</div>
+</div>
 <!--<section id="gallery" style="padding:50px 0px;">
   <div class="container">
 	  <div class="">

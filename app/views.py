@@ -101,3 +101,6 @@ def gallerysingle(request):
     print(id)
     r = Gallery.objects.filter(function_name=p.function_name)
     return render(request, 'gallerysingle.html', {'abt': abt, 'pic': pic, 'slider': slider, 'cnt': cnt, 'cat': cat,'r':r,'fixed':fixed})
+
+def adminn(request):
+    return render(request, 'admin.html')

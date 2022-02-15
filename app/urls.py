@@ -12,5 +12,6 @@ urlpatterns = [
     path('events', views.events, name="events"),
     path('gallerysingle', views.gallerysingle, name="gallerysingle"),
     path('activitysingle', views.activitysingle, name="activitysingle"),
+    path('adminn', views.adminn, name="adminn"),
 
 ]
