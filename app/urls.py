@@ -13,5 +13,6 @@ urlpatterns = [
     path('gallerysingle', views.gallerysingle, name="gallerysingle"),
     path('activitysingle', views.activitysingle, name="activitysingle"),
     path('adminn', views.adminn, name="adminn"),
+    path('slider_edit', views.slider_edit, name="slider_edit"),
 
 ]

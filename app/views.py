@@ -104,3 +104,9 @@ def gallerysingle(request):
 
 def adminn(request):
     return render(request, 'admin.html')
+
+def slider_edit(request):
+    slider = Slider.objects.all()
+    cnt = Contact.objects.all()
+    fixed = Unique.objects.all()
+    return render(request, 'slider_edit.html',{'cnt': cnt,'slider': slider,'fixed':fixed})
