@@ -14,5 +14,6 @@ urlpatterns = [
     path('activitysingle', views.activitysingle, name="activitysingle"),
     path('adminn', views.adminn, name="adminn"),
     path('slider_edit', views.slider_edit, name="slider_edit"),
+    path('home_edit', views.home_edit, name="home_edit"),
 
 ]

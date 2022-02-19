@@ -167,6 +167,7 @@ display:none;
     width: 50%;
   }
 }
+
 #nextButton {
   color: #fff;
   font-size: 2em;
@@ -245,7 +246,7 @@ display:none;
 	</div>
 	<div class="row">
 {% for i in act_category %}
-	<div class="col-md-4">
+	<div class="col-md-4 gallery-category-mob">
 		<form action="activitysingle" method="post" enctype="multipart/form-data" style="padding:10px;">
 
 			{% csrf_token %}

@@ -266,27 +266,42 @@
 					<li class="nav-item" style="margin: 10px">
 						<!--<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"></a>-->
 						<div class="card card-hover" data-toggle="tab" href="#tabs-1" role="tab">
-                            <div class="box bg-cyan text-center" style="width: 130px;">
-                                <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                               <h6 class="text-white">Slider</h6></a>
+                            <div class="box  text-center" style="width: 130px;">
+                                <h6 class="text-white">Gallery</h6></a>
                             </div>
                         </div>
 					</li>
 					<li class="nav-item" style="margin: 10px">
 						<!--<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Second Panel</a>-->
 						<div class="card card-hover" data-toggle="tab" href="#tabs-2" role="tab">
-                            <div class="box bg-success text-center" style="width: 130px;">
-                                <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
-                                <h6 class="text-white">Contact Details</h6>
+                            <div class="box text-center" style="width: 130px;">
+                                <h6 class="text-white">Identity Items</h6>
                             </div>
                         </div>
 					</li>
 					<li class="nav-item" style="margin: 10px">
 						<!--<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Third Panel</a>-->
 						<div class="card card-hover" data-toggle="tab" href="#tabs-3" role="tab">
-                            <div class="box bg-warning text-center" style="width: 130px;">
-                                <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
-                                <h6 class="text-white">Logo</h6>
+                            <div class="box text-center" style="width: 130px;">
+                                <h6 class="text-white">Our Patron</h6>
+                            </div>
+                        </div>
+					</li>
+
+                    <li class="nav-item" style="margin: 10px">
+						<!--<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Third Panel</a>-->
+						<div class="card card-hover" data-toggle="tab" href="#tabs-3" role="tab">
+                            <div class="box text-center" style="width: 130px;">
+                                <h6 class="text-white">Our Patron</h6>
+                            </div>
+                        </div>
+					</li>
+
+                    <li class="nav-item" style="margin: 10px">
+						<!--<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Third Panel</a>-->
+						<div class="card card-hover" data-toggle="tab" href="#tabs-3" role="tab">
+                            <div class="box text-center" style="width: 130px;">
+                                <h6 class="text-white">Our Patron</h6>
                             </div>
                         </div>
 					</li>
@@ -296,21 +311,18 @@
 
 						<div style="    text-align: right;margin-right: 4%">
 							<div style="margin-bottom: 35px;">
-								<a style=" background-color: green;
-    color: white;
-    padding: 8px;
-    border-radius: 5px;
-    font-weight: 700;">Add New Slider</a>
+								<a style=" background-color: green; color: white; padding: 8px;
+								 border-radius: 5px; font-weight: 700;">Add New Image</a>
 							</div>
 						</div>
 						<div>
-                            {% for i  in slider %}
+                            {% for i  in cat %}
 							<div class="row" style="margin-top:15px">
 								<div class="col-md-3">
 									<div class="">
 										<h4>Slider</h4>
                                         <label>Slider Text</label>
-                                        <input type="text" value="{{i.word}}">
+                                        <input type="text" value="{{i.funtion_name}}">
 									</div>
 								</div>
 								<div class="col-md-9">
@@ -318,13 +330,13 @@
 											<div class="row">
 												<div class="col-3">
 													<div>
-														<img src="{{i.img.url}}" style="width:200px;height:120px;object-fit:cover;">
+														<img src="{{i.image.url}}" style="width:200px;height:120px;object-fit:cover;">
 													</div>
 												</div>
 												<div class="col-3">
 													<div style = "margin-top:15px">
 
-														<input type="file" id="slider" name="slider">
+														<input type="file" id="image" name="image">
 													</div>
 												</div>
                                                 <div class="col-3">
@@ -349,8 +361,8 @@
 					</div>
 					<div class="tab-pane" id="tabs-2" role="tabpanel">
                         <div>
-                            <div class="">
-                          <div class="row">
+                            <div class="container">
+                          <div class="row justify-content-center">
                           <div class="col-md-5">
                            <div class="card">
                               <div class="card-body py-md-4">
@@ -381,12 +393,11 @@
                         </div>
                         </div>
 					</div>
-                    <form action="">
 					<div class="tab-pane" id="tabs-3" role="tabpanel">
                         <img src="{{fixed.0.logo.url}}" style="width:120px;height:120px;object-fit:cover;">
 						<input type="file" id="logo" name="logo">
 					</div>
-				</form>
+				</div>
 				</div>
 			</div>
 

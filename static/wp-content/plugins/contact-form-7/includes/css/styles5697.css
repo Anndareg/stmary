@@ -4,8 +4,15 @@
     height: 280px!important;
     object-fit: cover;
 }
+@media only screen and (max-width: 600px){
+.main-banner .slick-slide {
+    width: 100%;
+    height: 300px!important;
+}
+}
 .main-banner-slider
 {
+
     background-size:cover;
     width:100%;
     height:600px;
@@ -16,7 +23,7 @@
 {
 background-size:cover;
     width:100%;
-    height:600px!important;
+    height:600px;
     background-repeat:no-repeat;
 }
 .wpcf7 .screen-reader-response {

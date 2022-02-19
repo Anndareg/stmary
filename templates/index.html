@@ -270,8 +270,7 @@
 
 
 	.calendar {
-  min-width: 350px;
-  max-width: 50%;
+  width:100%;
   margin: 1em auto;
   padding: 1em;
   background: #EEE;
@@ -279,6 +278,9 @@
   box-shadow: 0 0 0.1em rgba(0, 0, 0, 0.5);
   border-radius: 0.2em;
 }
+
+
+
 .calendar:last-child {
     border-top: 6px solid #849974;
 }
@@ -827,10 +829,7 @@ background: #849974;
 																			<div class="lte-team-list">
 																				<div class="row">
 																						{% for i in members %}
-																						<div
-
-																						class="lte-item col-md-3">
-
+																						<div class="lte-item col-md-3">
 																						<div class="lte-team-item">
 																							<a href="{{i.team_members.url}}
 																								class="lte-image">
@@ -900,9 +899,9 @@ background: #849974;
 																	<div class="elementor-widget-container">
 																		<div class="elementor-image">
 																			<img width="1024" height="840"
-																				src=""
+																				src="{{publish.0.book.url}}"
 																				class="attachment-large size-large"
-																				alt="" loading="lazy">
+																				alt="" loading="lazyZZZZ">
 																		</div>
 																	</div>
 																</div>

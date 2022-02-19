@@ -103,10 +103,17 @@ def gallerysingle(request):
     return render(request, 'gallerysingle.html', {'abt': abt, 'pic': pic, 'slider': slider, 'cnt': cnt, 'cat': cat,'r':r,'fixed':fixed})
 
 def adminn(request):
-    return render(request, 'admin.html')
+    return render(request, 'adminn.html')
 
 def slider_edit(request):
     slider = Slider.objects.all()
     cnt = Contact.objects.all()
     fixed = Unique.objects.all()
     return render(request, 'slider_edit.html',{'cnt': cnt,'slider': slider,'fixed':fixed})
+
+def home_edit(request):
+    slider = Slider.objects.all()
+    cnt = Contact.objects.all()
+    fixed = Unique.objects.all()
+    cat = Gallery_category.objects.all()
+    return render(request, 'home_edit.html',{'cnt': cnt,'slider': slider,'fixed':fixed,'cat': cat})
