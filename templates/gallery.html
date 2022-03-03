@@ -239,7 +239,7 @@ display:none;
 		</div>
 	</div>
 	<div class="row">
-	{% for j in pic %}
+
 {% for i in cat %}
 	<div class="col-md-4">
 		<form action="gallerysingle" method="post" enctype="multipart/form-data" style="padding:10px;">
@@ -247,15 +247,14 @@ display:none;
 			{% csrf_token %}
 
 			<div>
-				<button value="{{i.id}}" name="id" type="submit" class="filter_gallery" style="background-image: url({{j.image.url}})">
+				<button value="{{i.id}}" name="id" type="submit" class="filter_gallery" style="background-image: url({{function_name.i.image.url}})">
 					<div class="gallery-title">
-						{{i.function_name}}
+						{{i.name}}
 					</div>
 				</button>
 			</div>
 		</form>
 	</div>
-		{% endfor %}
 {% endfor %}
 </div>
 </div>

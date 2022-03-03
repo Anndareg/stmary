@@ -11,8 +11,6 @@ from .models import Contact
 from .models import Gallery_category
 from .models import Activities_category
 
-
-
 def index(request):
     abt = About.objects.all()
     slider=Slider.objects.all()
@@ -113,7 +111,66 @@ def slider_edit(request):
 
 def home_edit(request):
     slider = Slider.objects.all()
+    pic = Gallery.objects.all()
     cnt = Contact.objects.all()
     fixed = Unique.objects.all()
     cat = Gallery_category.objects.all()
-    return render(request, 'home_edit.html',{'cnt': cnt,'slider': slider,'fixed':fixed,'cat': cat})
+    members = Team.objects.all()
+    publish = Publications.objects.all()
+    return render(request, 'home_edit.html',{'cnt': cnt,'slider': slider,'fixed':fixed,'cat': cat,'pic':pic,'members':members,'publish':publish})
+
+def activities_edit(request):
+    activity = Activities.objects.all()
+    return render(request,'activities_edit.html',{'activity':activity})
+
+def about_edit(request):
+    abt = About.objects.all()
+    return render(request,'about_edit.html',{'abt':abt})
+
+def add_slider(request):
+    a = request.FILES['img']
+    b= request.POST['word']
+    slider=Slider.objects.all()
+    data=Slider(img=a,word=b);
+    data.save();
+    return render(request, 'slider_edit.html',{'slider': slider})
+
+def update_contact(request):
+    id = request.POST['id']
+    a= request.POST['code']
+    b = request.POST['phn1']
+    c = request.POST['phn2']
+    d = request.POST['address']
+    e = request.POST['email']
+    Contact.objects.filter(id=id).update(code=a,phn1=b,phn2=c,address=d,email=e);
+    cnt = Contact.objects.all()
+    fixed = Unique.objects.all()
+    slider = Slider.objects.all()
+    return render(request, 'slider_edit.html',{'slider': slider,'fixed':fixed,'cnt': cnt})
+
+
+def delete_slider(request):
+    id = request.POST['id']
+    data = Slider.objects.get(id=id)
+    data.delete()
+    slider = Slider.objects.all()
+    fixed = Unique.objects.all()
+    cnt = Contact.objects.all()
+    return render(request,'slider_edit.html',{'slider': slider,'fixed':fixed,'cnt': cnt})
+
+def delete_gallery(request):
+    id = request.POST['id']
+    data = Gallery.objects.get(id=id)
+    data.delete()
+    pic = Gallery.objects.all()
+    return render(request,'slider_edit.html',{'pic': pic})
+
+
+def update_logo(request):
+    id = request.POST['id']
+    a = request.FILES['logo']
+    Unique.objects.filter(id=id).update(logo=a);
+    fixed = Unique.objects.all()
+    slider = Slider.objects.all()
+    cnt = Contact.objects.all()
+    return render(request, 'slider_edit.html', {'slider': slider,'fixed':fixed,'cnt': cnt})

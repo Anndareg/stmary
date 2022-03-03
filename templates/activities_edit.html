@@ -1,0 +1,116 @@
+{% extends 'adminn_header.html' %}
+{% block content %}
+ <div class="container-fluid">
+				<div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" style="margin: 10px">
+                            <!--<a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"></a>-->
+                            <div class="card card-hover" data-toggle="tab" href="#tabs-1" role="tab">
+                                <div class="box bg-cyan text-center" style="width: 130px;">
+                                    <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
+                                   <h6 class="text-white">Add New Activities</h6></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item" style="margin: 10px">
+                            <!--<a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Second Panel</a>-->
+                            <div class="card card-hover" data-toggle="tab" href="#tabs-2" role="tab">
+                                <div class="box bg-success text-center" style="width: 130px;">
+                                    <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
+                                    <h6 class="text-white">Update Activities</h6>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item" style="margin: 10px">
+                            <!--<a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Third Panel</a>-->
+                            <a class="card card-hover" data-toggle="tab" href="#tabs-3" role="tab">
+                                <div class="box bg-warning text-center" style="width: 130px;">
+                                    <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
+                                    <h6 class="text-white">Delete Activities</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+					<div class="tab-pane active" id="tabs-1" role="tabpanel">
+                       <form action="add_activities">
+                                 <div class="row" style="margin-bottom:25px;">
+                                    <div class="col-md-2"><span>Category</span><br> <input type="text" id="category" name="category">
+                                    </div>
+                                    <div class="col-md-2">
+                                         <span>Name</span> <br><input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="col-md-2">
+                                         <span>Place</span> <br><input type="text" id="place" name="place">
+                                    </div>
+                                    <div class="col-md-2"><br>
+                                        <input type="file" id="image" value="image" name="image">
+                                    </div>
+                                    <div class="col-md-2"><br>
+                                        <button type="submit" value="">Update</button>
+                                    </div>
+                                </div>
+                       </form>
+                    </div>
+
+                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                      {% for i in activity %}
+                      <form action="add_activities">
+                                 <div class="row" style="margin-bottom:25px;">
+                                    <div class="col-md-2"><span>Category</span><br> <input type="text" value={{i.category}}   name="category">
+                                    </div>
+                                    <div class="col-md-2">
+                                         <span>{{i.name}}</span> <br><input type="text" value={{i.name}} name="name">
+                                    </div>
+                                    <div class="col-md-2">
+                                         <span>Place</span> <br><input type="text" value={{i.place}}  name="place">
+                                    </div>
+                                     <div class="col-md-2"><br>
+                                         <img src="{{i.image.url}}" style="width:100%;height:220px;object-fit:cover;">
+                                    </div>
+                                    <div class="col-md-2"><br>
+                                        <input type="file" value="{{i.image.url}}" name="image">
+                                    </div>
+                                    <div class="col-md-2"><br>
+                                        <button type="submit" value="{{i.id}}">Update</button>
+                                    </div>
+                                </div>
+                       </form>
+                      {% endfor %}
+                    </div>
+
+                     <div class="tab-pane" id="tabs-3" role="tabpanel">
+                        {% for i in activity %}
+                      <form action="add_activities">
+                                 <div class="row" style="margin-top:25px;">
+                                    <div class="col-md-2"><span>Category:</span> {{i.category}}
+                                    </div>
+                                    <div class="col-md-2">
+                                         <span>Name:</span> {{i.name}}
+                                    </div>
+                                    <div class="col-md-2">
+                                         <span>Place:</span> {{i.place}}
+                                    </div>
+                                    <div class="col-md-2"><br>
+                                        <input type="file" value="image" name="image">
+                                    </div>
+                                    <div class="col-md-2"><br>
+                                        <button type="submit" value="">Update</button>
+                                    </div>
+                                </div>
+                       </form>
+                      {% endfor %}
+                    </div>
+
+                    </div>
+
+
+
+                </div>
+ </div>
+
+
+
+
+ {% endblock %}

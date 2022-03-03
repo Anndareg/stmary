@@ -10,6 +10,7 @@ class Gallery(models.Model):
 
 class Gallery_category(models.Model):
     function_name=models.CharField(max_length=30)
+    #function_name = models.ForeignKey(Gallery, on_delete=models.CASCADE)
 
 
 class Team(models.Model):
