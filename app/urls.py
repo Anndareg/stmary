@@ -13,6 +13,8 @@ urlpatterns = [
     path('gallerysingle', views.gallerysingle, name="gallerysingle"),
     path('activitysingle', views.activitysingle, name="activitysingle"),
     path('adminn', views.adminn, name="adminn"),
+    path('team', views.team, name="Administration page"),
+    path('convent', views.convent, name="Convents page page"),
 
 
 
@@ -24,5 +26,13 @@ urlpatterns = [
     path('add_slider', views.add_slider, name="add_slider"),
     path('update_contact', views.update_contact, name="update_contact"),
     path('update_logo', views.update_logo, name="update_logo"),
-
+    path('update_identity', views.update_identity, name="update_identity"),
+    path('update_patron1', views.update_patron1, name="update_patron1"),
+    path('update_patron2', views.update_patron2, name="update_patron2"),
+    path('update_patron3', views.update_patron3, name="update_patron3"),
+    path('update_mission', views.update_mission, name="update_mission"),
+    path('team_update', views.team_update, name="team_update"),
+    path('publish_update', views.publish_update, name="publish_update"),
+    path('gallery_category_delete', views.gallery_category_delete, name="gallery_category_delete"),
+    path('add_gallery', views.add_gallery, name="New Photos in gallery"),
 ]

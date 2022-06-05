@@ -396,18 +396,14 @@ background: #849974;
 																		</div>
 
 
-																		<div>
-
-																				<section class="customer-logos slider">
-																					 {% for i in pic %}
-																				  <div class="slide">
-
-																					  <a href="gallery"><img src="{{i.image.url}}"></a>
-
-																				  </div>
-																					{% endfor %}
-																				</section>
-
+																		<div id="slider-gallery" style="width: 502px">
+																			<section class="gallery-slider slider1">
+																				{% for i in pic %}
+																					  <div class="slide2">
+																					  <a href="gallery" style="502px"><img src="{{i.image.url}}"></a>
+																					  </div>
+																				{% endfor %}
+																			</section>
 																		</div>
 																	</div>
 																</div>
@@ -1195,58 +1191,58 @@ background: #849974;
 	<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/preloaded-modules.minb045.js' %}"
 		id='preloaded-modules-js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 	<script>
-		$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
-});
+	$(document).ready(function(){
+		$('.gallery-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1500,
+			arrows: false,
+			dots: false,
+			pauseOnHover: false,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}, {
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
+	});
 	</script>
 
 <script>
-		$(document).ready(function(){
-    $('.main-banner').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed:2000,
-        arrows: false,
-        dots : false,
-        fade : true,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
+	$(document).ready(function(){
+		$('.main-banner').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed:2000,
+			arrows: false,
+			dots : false,
+			fade : true,
+			pauseOnHover: false,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}, {
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 1
+				}
+			}]
+		});
 });
 	</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
 
 
 

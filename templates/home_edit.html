@@ -1,4 +1,5 @@
 {% extends 'adminn_header.html' %}
+{% load static %}
 {% block content %}
 
     <div class="container-fluid">
@@ -54,7 +55,7 @@
         </ul>
         <div class="tab-content"><!-- Gallery -->
 			<div class="tab-pane active" id="tabs-1" role="tabpanel">
-                <ul class="nav nav-tabs" role="tablist">
+             <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#slide-1" role="tab">Delete</a>
                   </li>
@@ -64,39 +65,39 @@
                 </ul>
                 <div class="tab-content">
                    <div class="tab-pane active" id="slide-1" role="tabpanel">
-                    {% for i in pic %}
-                     <div style="margin-top:15px">
-                     <form action="delete_gallery"method="post" enctype="multipart/form-data">
-                       {% csrf_token %}
-                         <div class="row">
-                             <div class="col-md-3">
-                                <div>
-                                    <span>Function Name</span>{{i.function_name}}
+                   <div class="row">
+                    {% for i in cat %}
+                        <div class="col-md-4">
+                            <form action="gallery" method="post" enctype="multipart/form-data" style="padding:10px;">
+
+                                {% csrf_token %}
+
+                                <div class="category">
+                                    <div class="gallery-title">
+                                            {{i.function_name}}
+                                    </div>
+                                    <button value="{{i.id}}" name="id" type="submit" class="filter_gallery"
+                                            style= "background-image:url({{i.image.url}}); height: 100px; width: 100px;background-position: center;background-size: cover;background-repeat: no-repeat;">
+                                    </button>
+                                      <form action="gallery_category_delete" method="post" enctype="multipart/form-data" style="padding:10px;">
+                                        {% csrf_token %}
+                                        <input type="hidden" value="{{i.id}}" name="id">
+                                        <p><button type="submit">Delete </button></p>
+                                      </form>
                                 </div>
-                             </div>
-                             <div class="col-md-3">
-                                 <div>
-                                    <img src="{{i.image.url}}" style="width:200px;height:120px;object-fit:cover;">
-                                 </div>
-                             </div>
-                             <div class="col-md-2">
-                                 <div>
-                                     <p><button type="submit">Delete Image</button></p>
-                                 </div>
-                             </div>
-                         </div>
-                     </form>
-                     </div>
+                            </form>
+                        </div>
                     {% endfor %}
                     </div>
+                   </div>
 
-                     <div class="tab-pane" id="slide-2" role="tabpanel">
+                    <div class="tab-pane" id="slide-2" role="tabpanel">
                     <form action="add_gallery"method="post" enctype="multipart/form-data">
                        {% csrf_token %}
                         <div class="row">
                             <div class="col-md-3">
                                 <div style = "margin-top:15px">
-                                   <input type="file" id="image" value="image" name="image">
+                                   <input type="file" id="image" value="image" name="image"multiple>
                                 </div>
                             </div>
                                <div class="col-md-3">
@@ -109,13 +110,171 @@
                     </form>
                    </div>
 
-
                 </div>
-                <div class="tab-content">
+            </div>
 
-                </div>
+        <!-- Identity -->
+			<div class="tab-pane" id="tabs-2" role="tabpanel">
+                <form action="update_identity"method="post" enctype="multipart/form-data">
+                       {% csrf_token %}
 
+                        <div class="row">
+                             <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                    <span>Identity Description</span></br><textarea style="width: 100%;
+                                     height: 80px;" id="identity_data"  name="identity_data">{{fixed.0.identity_data}}</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                    <span>Identity Heading</span><br><input type="text" value="{{fixed.0.identity_heading}}" id="identity_heading" name="identity_heading" >
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                   <span>Cover Image</span><input type="file" id="identity_cover" srcset= {{fixed.0.identity_cover.url}} name="identity_cover">
+                                </div>
+                            </div>
+                            <div class="col-md-3" style = "margin-top:15px">
+                                   <input type="hidden" value="{{fixed.0.id}}" name="id">
+                                   <p><button type="submit">UPDATE </button></p>
+                            </div>
+                        </div>
+                </form>
+            </div>
+       <!-- Patrons -->
+			<div class="tab-pane" id="tabs-3" role="tabpanel">
+                <form action="update_patron2"method="post" enctype="multipart/form-data">
+                       {% csrf_token %}
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                   <span>Joseph Kuzhinjali</span><input type="file" id="patron2"  name="patron1">
+                                </div>
+                            </div>
+                             <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                    <span>Description</span></br><textarea id="patron2_description" name="patron2_description">{{fixed.0.patron2_description}}</textarea>                                </div>
+                            </div>
+                            <div class="col-md-3" style = "margin-top:15px">
+                                   <input type="hidden" value="{{fixed.0.id}}" name="id">
+                                   <p><button type="submit" value="{{fixed.0.id}}" name="id">UPDATE </button></p>
+                            </div>
+                        </div>
+                </form>
+                <form action="update_patron1"method="post" enctype="multipart/form-data">
+                       {% csrf_token %}
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                   <span>Mar Ivanios</span><input type="file" id="patron1"  name="patron1">
+                                </div>
+                            </div>
+                             <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                    <span>Description</span></br><textarea id="patron1_description" name="patron1_description">{{fixed.0.patron1_description}}</textarea>                                </div>
+                            </div>
+                            <div class="col-md-3" style = "margin-top:15px">
+                                   <input type="hidden" value="{{fixed.0.id}}" name="id">
+                                   <p><button type="submit"value="{{fixed.0.id}}" name="id">UPDATE </button></p>
+                            </div>
+                        </div>
+                </form>
+                <form action="update_patron3"method="post" enctype="multipart/form-data">
+                       {% csrf_token %}
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                   <span>Mother Mary Kallarackal</span><input type="file" id="patron3"  name="patron3">
+                                </div>
+                            </div>
+                             <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                    <span>Description</span></br><textarea id="patron3_description" name="patron3_description">{{fixed.0.patron3_description}}</textarea>                                </div>
+                            </div>
+                            <div class="col-md-3" style = "margin-top:15px">
+                                   <input type="hidden" value="{{fixed.0.id}}" name="id">
+                                   <p><button type="submit" value="{{fixed.0.id}}" name="id">UPDATE</button></p>
+                            </div>
+                        </div>
+                </form>
+
+            </div>
+        <!-- Mission -->
+			<div class="tab-pane" id="tabs-4" role="tabpanel">
+                <form action="update_mission"method="post" enctype="multipart/form-data">
+                   {% csrf_token %}
+                   <h4 style="text-align:center; margin-top:25px;">Mission</h4><hr>
+                    <span>Mission cover</span><input type="file" id="mission_cover"  name="mission_cover">
+                    <textarea style="width: 100%; height:100px; margin-top:15px;" id="mission_data"  name="mission_data">{{fixed.0.mission_data}}</textarea>
+                    <p><button style=" margin-top:15px;" type="submit" value="{{fixed.0.id}}" name="id">UPDATE </button></p>
+
+                </form>
+            </div>
+        <!-- Team-->
+			<div class="tab-pane" id="tabs-5" role="tabpanel">
+                {% for i in members %}
+                    <form action="team_update"method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                     <img src="{{i.team_members.url}}" style="width:200px;height:120px;object-fit:cover;">
+                                   <input type="file" id="team_members"  name="team_members" value="{{i.team_members}}">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                  <span>Name:</span> <input type="text" id="member_name"  name="member_name" value="{{i.member_name}}"></br>
+                                  <span>Role:</span> <input type="text" id="member_role"  name="member_role" value="{{i.member_role}}">
+                                </div>
+                            </div>
+                             <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                    <span>Description</span></br><textarea id="member_description" name="member_description">{{i.member_description}}</textarea>                                </div>
+                            </div>
+                            <div class="col-md-3" style = "margin-top:15px">
+                                   <input type="hidden" value="{{i.id}}" name="id">
+                                   <p><button type="submit" value="{{i.id}}" name="id">UPDATE</button></p>
+                            </div>
+                        </div>
+                 </form>
+                {% endfor %}
+
+            </div>
+        <!-- Publications -->
+			<div class="tab-pane" id="tabs-6" role="tabpanel">
+                {% for i in publish %}
+                    <form action="publish_update"method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                     <img src="{{i.book.url}}" style="width:200px;height:120px;object-fit:cover;">
+                                   <input type="file" id="book"  name="book" value="{{i.book}}">
+                                </div>
+                            </div>
+                             <div class="col-md-3">
+                                <div style = "margin-top:15px">
+                                    <span>Description</span></br><textarea style="height:80px;" id="book_description" name="book_description">{{i.book_description}}</textarea>                                </div>
+                            </div>
+                            <div class="col-md-3" style = "margin-top:15px">
+                                   <input type="hidden" value="{{i.id}}" name="id">
+                                   <p><button type="submit" value="{{i.id}}" name="id">UPDATE</button></p>
+                            </div>
+                        </div>
+                 </form>
+                {% endfor %}
 
             </div>
         </div>
+    </div>
+
+
+
+
+
 {% endblock %}

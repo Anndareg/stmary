@@ -39,3 +39,7 @@ File: css
     background-color: gray;
     padding-top: 17px!important;
     }
+@media (min-width: 525px) and (max-width: 991px) {
+    #slider-gallery {
+    width: 502px;
+}

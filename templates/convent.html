@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 					<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
-				<title>gallery</title>
+				<title>Our Convents</title>
 <meta name='robots' content='max-image-preview:large' >
 <head>
 
@@ -45,7 +45,6 @@
 <!--<style id='fidem-theme-style-inline-css' type='text/css'>
 			:root {			  &#45;&#45;main:   #832732 !important;			  &#45;&#45;second:   #e1dbcb !important;			  &#45;&#45;gray:   #f5f3f1 !important;			  &#45;&#45;black:  #221917 !important;			  &#45;&#45;white:  #FFFFFF !important;			  &#45;&#45;red:   #832732 !important;			  &#45;&#45;yellow:   #e1dbcb !important;			  &#45;&#45;green:   #42bf80 !important;&#45;&#45;font-main: 'Jost' !important;&#45;&#45;font-headers: 'Cormorant Infant' !important;			  			}				.lte-page-header { background-image: url(wp-content/uploads/2021/12/inner_HEADER.jpg) !important; } .lte-footer-wrapper:before { background-image: url(//fidem.like-themes.com/wp-content/uploads/2021/11/footer-bg-025.png) !important; } #nav-wrapper.lte-layout-transparent .lte-navbar.dark.affix { background-color: rgba(0,0,0,0.75) !important; } .lte-logo img { max-height: 74px !important; } .lte-layout-desktop-center-transparent .lte-navbar .lte-logo img { max-height: 82px !important; }
 </style>-->
-
 <link rel='stylesheet' id='font-awesome-css'  href="{% static 'wp-content/themes/fidem/assets/fonts/font-awesome/css/all.min20b9.css' %}" type='text/css' media='all' />
 <style id='font-awesome-inline-css' type='text/css'>
 [data-font="FontAwesome"]:before {font-family: 'FontAwesome' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
@@ -76,217 +75,113 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-
-<style>
-.fa-plus-circle
-{
-display:none;
-}
-.elementor-element-a276837
-{
- padding: 25px!important;
-    box-shadow: 1px 1px 8px #00000042!important;
-    background-color:white!important;
-}
-
- .elementor-motion-effects-layer
- {
-
- background-position:center center;
- background-size:cover;
- }
-
-
-
-   #gallery {
-  padding-top: 40px;
-}
-@media screen and (min-width: 991px) {
-  #gallery {
-    padding: 60px 30px 0 30px;
-  }
-}
-
-.img-wrapper {
-  position: relative;
-  margin-top: 15px;
-}
-.img-wrapper img {
-  width: 100%;
-  object-fit: cover;
-  height: 200px;
-}
-
-.img-overlay {
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-}
-.img-overlay i {
-  color: #fff;
-  font-size: 3em;
-}
-#overlay {
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-#overlay img {
-  margin: 0;
-  width: 80%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  padding: 5%;
-}
-@media screen and (min-width: 768px) {
-  #overlay img {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #overlay img {
-    width: 50%;
-  }
-}
-#nextButton {
-  color: #fff;
-  font-size: 2em;
-  transition: opacity 0.8s;
-}
-#nextButton:hover {
-  opacity: 0.7;
-}
-@media screen and (min-width: 768px) {
-  #nextButton {
-    font-size: 3em;
-  }
-}
-#prevButton {
-  color: #fff;
-  font-size: 2em;
-  transition: opacity 0.8s;
-}
-#prevButton:hover {
-  opacity: 0.7;
-}
-@media screen and (min-width: 768px) {
-  #prevButton {
-    font-size: 3em;
-  }
-}
-#exitButton {
-  color: #fff;
-  font-size: 2em;
-  transition: opacity 0.8s;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-#exitButton:hover {
-  opacity: 0.7;
-}
-@media screen and (min-width: 768px) {
-  #exitButton {
-    font-size: 3em;
-  }
-}
-
-.gallery-title{
-	font-size: 30px!important;
-    background-color: gray!important;
-    padding: 5px 10px 5px 10px!important;
-    border-radius: 5px!important;
-    font-weight: 600!important;
-    margin-top: 110px!important;
-}
-.filter_gallery
-{
-    height: 290px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-</style>
 </head>
 <body class="home page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-13198 theme-fidem woocommerce-no-js give-test-mode give-page tribe-no-js full-width lte-color-scheme-default lte-body-white lte-background-white paceloader-disabled no-sidebar elementor-default elementor-kit-13200 elementor-page elementor-page-13198">
 {% include "header.html" %}
 
 
-<div class="container" style="padding:50px 0px;">
-	<div class="text-center" style="text-align: center;">
-		<div class="">
-			<h3>Gallery</h3>
-		</div>
-	</div>
-	<div class="row">
 
-{% for i in cat %}
-	<div class="col-md-4">
-		<form action="gallerysingle" method="post" enctype="multipart/form-data" style="padding:10px;">
+<div class="container">
+<h3>Our Convents</h3>
+<p>The province consists of 267 sisters and 41 convents in India and abroad. We extend our service to 5 centers of the Archdiocese of Thiruvananthapuram and Diocese of Movattupuzha</p>
+</div>
+<!-- india convent names -->
+<div class="container" style="padding: 0px 0px 50px 0px;">
+<!--			<div>-->
+<!--				<div>-->
+<!--					<div style="margin-top: 35px;">-->
+<!--                        <div class="patron-wrap">-->
+<!--                         <div class="">-->
+<!--                             <div>-->
+<!--                                <h4>INDIA <img src="{% static 'image/india.jpg' %}"class="img-fluid" style="width: 30px;margin-bottom: 8px;"></h4>-->
+<!--                              </div>-->
+<!--                         </div>-->
+<!--                        <div>-->
+<!--                                <div class="row">-->
+<!--                                    {% for i in convents %}-->
+<!--                                <div class="col-md-3">-->
+<!--                                    <ul>-->
+<!--                                        <li>{{i.convent_place}}</li>-->
+<!--                                    </ul>-->
+<!--                                </div>{% endfor %}-->
+<!--                                </div>-->
+<!--                        </div>-->
+<!--                        </div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+</div>
+<!-- end of india convent names -->
 
-			{% csrf_token %}
 
+
+
+
+<!-- india convent pics -->
+<!--<section class="container py-4">-->
+<!--    <div class="row">-->
+<!--        {% for i in convents %}-->
+<!--            <div class="col-md-4">-->
+<!--                <div class="category">-->
+<!--                    <img src="{{i.convent_image.url}}"class=" convent-photo img-fluid "></a>-->
+<!--                </div>-->
+<!--                    <h6 class="text-center" style="color:black;margin-top:10px;">{{i.convent_place}}</h6>-->
+
+<!--            </div>-->
+<!--        {% endfor %}-->
+
+<!--    </div>-->
+<!--</section>-->
+<!-- end of india convent pics -->
+
+
+
+ <div class="container" style="padding: 0px 0px 50px 0px;">
 			<div>
-				<button value="{{i.id}}" name="id" type="submit" class="filter_gallery"  style= "background-image:url({{i.image.url}});";>
-					<div class="gallery-title">
-						{{i.function_name}}
-					</div>
-				</button>
-			</div>
-		</form>
-	</div>
-{% endfor %}
-</div>
-</div>
-<!--<section id="gallery" style="padding:50px 0px;">
-  <div class="container">
-	  <div class="">
-<h3 style="text-align: center;">Gallery</h3>
-</div>
-    <div id="image-gallery">
-      <div class="row">
-        {% for i in pic %}
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-          <div class="img-wrapper">
-            <a href="{{i.image.url}}"><img src="{{i.image.url}}" class="img-responsive"></a>
-            <div class="img-overlay">
-              <i class="fa fa-plus-circle" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>-->
+				<div>
+					<div style="margin-top:">
+                        <div class="patron-wrap">
+                        <h3>Abroad</h3>
+                            {% for i in countries  %}
+<!--								{{i.country}}-->
+								{% for j in convents  %}
+									{% ifequal i.country j.convent_country %}
+										<img src="{{i.convent_image.url}}"class=" convent-photo img-fluid ">
+									{% endifequal %}
 
+								{% endfor %}
 
+							{% endfor %}
 
+                            <ul>
+                                <li>{{i.id}}</li>
 
+                            </ul><br>
 
+                        </div>
+				    </div>
+			    </div>
+		    </div>
+ </div>
 
+<div class="container" style="padding: 0px 0px 50px 0px;">
+			<div>
+				<div>
+					<div style="margin-top: 35px;">
+                        <div class="patron-wrap">
+                        <h3>Service Centres</h3>
+                            <ul>
+                            {% for i in service  %}
 
+                                <li>{{i.centre_name}},{{i.centre_place}},{{i.centre_district}}</li>
 
+                            {% endfor %}
+                            </ul>
+                        </div>
+				    </div>
+			    </div>
+		    </div>
+ </div>
 
 
 {% include "footer.html" %}
@@ -457,130 +352,5 @@ display:none;
 	<script type='text/javascript' src="{% static 'wp-content/plugins/elementor/assets/js/preloaded-modules.minb045.js' %}"
 		id='preloaded-modules-js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-
-	<script>
-		$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1
-            }
-        }]
-    });
-});
-	</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script>
-    // Gallery image hover
-$( ".img-wrapper" ).hover(
-  function() {
-    $(this).find(".img-overlay").animate({opacity: 1}, 600);
-  }, function() {
-    $(this).find(".img-overlay").animate({opacity: 0}, 600);
-  }
-);
-
-// Lightbox
-var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
-var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
-var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
-var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
-
-// Add overlay
-$overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
-$("#gallery").append($overlay);
-
-// Hide overlay on default
-$overlay.hide();
-
-// When an image is clicked
-$(".img-overlay").click(function(event) {
-  // Prevents default behavior
-  event.preventDefault();
-  // Adds href attribute to variable
-  var imageLocation = $(this).prev().attr("href");
-  // Add the image src to $image
-  $image.attr("src", imageLocation);
-  // Fade in the overlay
-  $overlay.fadeIn("slow");
-});
-
-// When the overlay is clicked
-$overlay.click(function() {
-  // Fade out the overlay
-  $(this).fadeOut("slow");
-});
-
-// When next button is clicked
-$nextButton.click(function(event) {
-  // Hide the current image
-  $("#overlay img").hide();
-  // Overlay image location
-  var $currentImgSrc = $("#overlay img").attr("src");
-  // Image with matching location of the overlay image
-  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
-  // Finds the next image
-  var $nextImg = $($currentImg.closest(".image").next().find("img"));
-  // All of the images in the gallery
-  var $images = $("#image-gallery img");
-  // If there is a next image
-  if ($nextImg.length > 0) {
-    // Fade in the next image
-    $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-  } else {
-    // Otherwise fade in the first image
-    $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
-  }
-  // Prevents overlay from being hidden
-  event.stopPropagation();
-});
-
-// When previous button is clicked
-$prevButton.click(function(event) {
-  // Hide the current image
-  $("#overlay img").hide();
-  // Overlay image location
-  var $currentImgSrc = $("#overlay img").attr("src");
-  // Image with matching location of the overlay image
-  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
-  // Finds the next image
-  var $nextImg = $($currentImg.closest(".image").prev().find("img"));
-  // Fade in the next image
-  $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
-  // Prevents overlay from being hidden
-  event.stopPropagation();
-});
-
-// When the exit button is clicked
-$exitButton.click(function() {
-  // Fade out the overlay
-  $("#overlay").fadeOut("slow");
-});
-</script>
-
-
-
 </body>
-
-<!-- Mirrored from fidem.like-themes.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Feb 2022 06:05:24 GMT -->
-
 </html>
-
-<!-- Dynamic page generated in 1.415 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2022-02-03 05:44:58 -->
-
-<!-- Compression = gzip -->

@@ -9,6 +9,8 @@ from .models import Activities
 from .models import About
 from .models import Contact
 from .models import Event
+from .models import Convents
+from .models import Convent_countries
 from .models import Gallery_category
 from .models import Activities_category
 
@@ -22,5 +24,7 @@ admin.site.register(Activities)
 admin.site.register(About)
 admin.site.register(Contact)
 admin.site.register(Event)
+admin.site.register(Convents)
+admin.site.register(Convent_countries)
 admin.site.register(Gallery_category)
 admin.site.register(Activities_category)

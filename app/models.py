@@ -8,8 +8,17 @@ class Gallery(models.Model):
     function_name = models.CharField(max_length=30)
     image= models.FileField()
 
+class Convents(models.Model):
+    convent_place = models.CharField(max_length=30)
+    convent_country = models.CharField(max_length=30)
+    convent_image = models.FileField(default=1)
+
+class Convent_countries(models.Model):
+    country = models.CharField(max_length=30)
+
 class Gallery_category(models.Model):
-    function_name=models.CharField(max_length=30)
+    function_name = models.CharField(max_length=30)
+    image = models.FileField()
     #function_name = models.ForeignKey(Gallery, on_delete=models.CASCADE)
 
 
@@ -38,8 +47,6 @@ class Unique(models.Model):
     mission_cover = models.FileField()
     location_cover = models.FileField()
     activities_description = models.TextField()
-
-
     patron1 = models.FileField()
     patron1_name = models.CharField(max_length=30)
     patron1_role = models.CharField(max_length=30)
